@@ -42,7 +42,7 @@ function receberPalpite(input){
 function restart(){
         palpites = [];
         textoPalpites.innerHTML = "";
-        input.value = "";
         alterabotao();
         bia.src = "./assets/bia.png";
+        input.value = "";
 }
