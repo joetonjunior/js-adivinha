@@ -29,11 +29,11 @@ function receberPalpite(input){
         }
         palpites.push(input.value);
         if (palpites.length == 5 && input.value != palpiteBia){
-          bia.src = "./assets/bia-triste.png";
-          alterabotao()
+            bia.src = "./assets/bia-triste.png";
+            alterabotao()
         } else if(input.value == palpiteBia){
-          alterabotao()
-          bia.src = "./assets/bia-feliz.png";
+            bia.src = "./assets/bia-feliz.png";
+            alterabotao()
         }
         input.value = "";
         textoPalpites.innerHTML = palpites.join("-");
