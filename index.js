@@ -30,7 +30,7 @@ function receberPalpite(input){
         palpites.push(input.value);
         if (palpites.length == 5 && input.value != palpiteBia){
           bia.src = "./assets/bia-triste.png";
-          alterabotao() //estou mexendo aqui
+          alterabotao()
           alert("Suas chances acabaram");
         } else if(input.value == palpiteBia){
           alert("Parabéns, você acertou!");
@@ -44,5 +44,6 @@ function restart(){
         palpites = [];
         textoPalpites.innerHTML = "";
         input.value = "";
+        alterabotao()
         bia.src = "./assets/bia.png";
 }
