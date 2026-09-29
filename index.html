@@ -20,11 +20,10 @@
             <input onchange="receberPalpite(event.target)" type="text" class="w-15 h-15 border-2 border-slate-300 focus:border-red-700 rounded m-auto my-4 text-center block text-lg">
           </div>
           <div id="butaovermei" class = "hidden absolute top-0 transition-200ms w-125 h-40">
-            <h3 id="textofinal">teste</h3>
             <button onclick="restart()" class = "bg-red-700 text-white w-100 h-18">Jogar novamente</button>
           </div>
         </div>
-        
+        <h3 id="textofinal" class="font-bold text-center">Você não acertou, o número era: <span id="resultadofinal" class="hidden text-amber-500">38</span></h3>
         <h6 class="font-bold text-center">Seus palpites</h6>
         <h2 id="palpites" class="text-center text-lg text-amber-500 font-bold"></h2>
     </div>
