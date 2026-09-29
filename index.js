@@ -8,12 +8,12 @@ let palpiteBia = (Math.random() * 100).toFixed();
 
 function alterabotao(){
   if (btnred.classList.contains("hidden")){
-    btnred.classList.remove("hidden")
-    resultadofinal.innerText = palpiteBia
+    btnred.classList.remove("hidden");
+    resultadofinal.innerText = palpiteBia;
   }else{
     btnred.classList.add("hidden");
-    txtfinal.innerText = ""
-    resultadofinal.innerText = ""
+    txtfinal.innerText = "";
+    resultadofinal.innerText = "";
   }
 }
 
