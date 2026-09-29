@@ -31,9 +31,8 @@ function receberPalpite(input){
         if (palpites.length == 5 && input.value != palpiteBia){
           bia.src = "./assets/bia-triste.png";
           alterabotao()
-          alert("Suas chances acabaram");
         } else if(input.value == palpiteBia){
-          alert("Parabéns, você acertou!");
+          alterabotao()
           bia.src = "./assets/bia-feliz.png";
         }
         input.value = "";
