@@ -4,8 +4,12 @@ let bia = document.querySelector("#bia");
 let btnred = document.getElementById("butaovermei");
 let palpiteBia = (Math.random() * 100).toFixed();
 
-function exibebotao(){
- btnred.classList.remove("hidden");
+function alterabotao(){
+  if (btnred.classList.contains("hidden")){
+    btnred.classList.remove("hidden")
+  }else{
+    btnred.classList.add("hidden");
+  }
 }
 
 function receberPalpite(input){
@@ -26,7 +30,7 @@ function receberPalpite(input){
         palpites.push(input.value);
         if (palpites.length == 5 && input.value != palpiteBia){
           bia.src = "./assets/bia-triste.png";
-          exibebotao() //estou mexendo aqui
+          alterabotao() //estou mexendo aqui
           alert("Suas chances acabaram");
         } else if(input.value == palpiteBia){
           alert("Parabéns, você acertou!");
