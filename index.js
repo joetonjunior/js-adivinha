@@ -8,11 +8,9 @@ let palpiteBia = (Math.random() * 100).toFixed();
 function alterabotao(){
   if (btnred.classList.contains("hidden")){
     btnred.classList.remove("hidden");
-    resultadofinal.innerText = palpiteBia;
   }else{
     btnred.classList.add("hidden");
     txtfinal.innerText = "";
-    resultadofinal.innerText = "";
   }
 }
 
@@ -33,12 +31,12 @@ function receberPalpite(input){
         }
         palpites.push(input.value);
         if (palpites.length == 5 && input.value != palpiteBia){
-            //txtfinal.innerText = "Voce perdeu, o numero era: ";
+            txtfinal.innerText = "Voce perdeu, o numero era: <span class='text-amber-500'>" + palpiteBia + "</span>";
             //txtfinal.insertAdjacentHTML("afterend", <span class="text-amber-500">38</span>);
             bia.src = "./assets/bia-triste.png";
             alterabotao();
         } else if(input.value == palpiteBia){
-            txtfinal.innerText = "Voce ganhou! O numero é: "
+            txtfinal.innerText = "Voce ganhou! O numero é: " + palpiteBia;
             bia.src = "./assets/bia-feliz.png";
             alterabotao();
         }
