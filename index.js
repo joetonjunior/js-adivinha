@@ -54,4 +54,5 @@ function restart(){
         input.value = "";
         txtfinal.innerText = ""
         resultadofinal.innerText = ""
+        palpiteBia = (Math.random() * 100).toFixed();
 }
