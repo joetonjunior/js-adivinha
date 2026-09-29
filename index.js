@@ -30,10 +30,10 @@ function receberPalpite(input){
         palpites.push(input.value);
         if (palpites.length == 5 && input.value != palpiteBia){
             bia.src = "./assets/bia-triste.png";
-            alterabotao()
+            alterabotao();
         } else if(input.value == palpiteBia){
             bia.src = "./assets/bia-feliz.png";
-            alterabotao()
+            alterabotao();
         }
         input.value = "";
         textoPalpites.innerHTML = palpites.join("-");
