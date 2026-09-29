@@ -2,8 +2,7 @@ let palpites = [];
 let textoPalpites = document.querySelector("#palpites");
 let bia = document.querySelector("#bia");
 let btnred = document.getElementById("butaovermei");
-let txtfinal = document.getElementById("textofinal")
-let resultadofinal = document.getElementById("resultadofinal")
+let txtfinal = document.getElementById("textofinal");
 let palpiteBia = (Math.random() * 100).toFixed();
 
 function alterabotao(){
@@ -53,7 +52,6 @@ function restart(){
         alterabotao();
         bia.src = "./assets/bia.png";
         input.value = "";
-        txtfinal.innerText = ""
-        resultadofinal.innerText = ""
+        txtfinal.innerText = "";
         palpiteBia = (Math.random() * 100).toFixed();
 }
