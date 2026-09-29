@@ -23,9 +23,9 @@ function receberPalpite(input){
             }
         }
         if(input.value > palpiteBia){
-            alert("Bia está pensando em um numero menor")
+            alert("Bia está pensando em um numero menor " + input.value);
         }else if(input.value < palpiteBia){
-            alert("Bia está pensando em um numero maior");
+            alert("Bia está pensando em um numero maior " + input.value);
         }else{
             bia.src = "./assets/bia-feliz.png";
         }
