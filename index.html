@@ -15,7 +15,15 @@
             </h1>
             <img id="bia" src="./assets/bia.png" alt="Bia">
         </div>
-        <input onchange="receberPalpite(event.target)" type="text" class="w-15 h-15 border-2 border-slate-300 focus:border-red-700 rounded m-auto my-4 text-center block text-lg">
+        <div>
+          <div>
+            <input onchange="receberPalpite(event.target)" type="text" class="w-15 h-15 border-2 border-slate-300 focus:border-red-700 rounded m-auto my-4 text-center block text-lg">
+          </div>
+          <div>
+            <button class = "bg-red-700 text-white w-120 h-40">Tentar novamente</button>
+          </div>
+        </div>
+        
         <h6 class="font-bold text-center">Seus palpites</h6>
         <h2 id="palpites" class="text-center text-lg text-amber-500 font-bold"></h2>
     </div>
