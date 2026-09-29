@@ -53,5 +53,4 @@ function restart(){
         bia.src = "./assets/bia.png";
         input.value = "";
         txtfinal.innerText = "";
-        palpiteBia = (Math.random() * 100).toFixed();
 }
