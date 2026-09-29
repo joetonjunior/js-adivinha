@@ -22,7 +22,6 @@ function receberPalpite(input){
         if (palpites.length == 5 && input.value != palpiteBia){
           bia.src = "./assets/bia-triste.png";
           alert("Suas chances acabaram");
-          restart()
         } else if(input.value == palpiteBia){
           alert("Parabéns, você acertou!");
           bia.src = "./assets/bia-feliz.png";
