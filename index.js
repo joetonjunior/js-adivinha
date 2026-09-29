@@ -43,6 +43,6 @@ function restart(){
         palpites = [];
         textoPalpites.innerHTML = "";
         input.value = "";
-        alterabotao()
+        alterabotao();
         bia.src = "./assets/bia.png";
 }
