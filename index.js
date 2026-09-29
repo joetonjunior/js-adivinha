@@ -34,7 +34,8 @@ function receberPalpite(input){
         }
         palpites.push(input.value);
         if (palpites.length == 5 && input.value != palpiteBia){
-            txtfinal.innerText = "Voce perdeu, o numero era: "
+            //txtfinal.innerText = "Voce perdeu, o numero era: ";
+            //txtfinal.insertAdjacentHTML("afterend", <span class="text-amber-500">38</span>);
             bia.src = "./assets/bia-triste.png";
             alterabotao();
         } else if(input.value == palpiteBia){
