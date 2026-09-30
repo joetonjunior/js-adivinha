@@ -4,6 +4,7 @@ let bia = document.querySelector("#bia");
 let btnred = document.getElementById("butaovermei");
 let txtfinal = document.getElementById("textofinal");
 let palpiteBia = (Math.random() * 100).toFixed();
+console.log(palpiteBia);
 
 function alterabotao(){
   if (btnred.classList.contains("hidden")){
@@ -45,6 +46,7 @@ function receberPalpite(input){
 
 function restart(){
         palpites = [];
+        palpiteBia = (Math.random() * 100).toFixed();
         textoPalpites.innerHTML = "";
         txtfinal.innerHTML = "";
         alterabotao();
